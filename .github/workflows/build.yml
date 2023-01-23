@@ -66,6 +66,6 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
       #Analyze project with SonarCloud
       - name: Analyze with SonarCloud
-        run: mvn -B verify sonar:sonar -Dsonar.projectKey=ysa4-key -Dsonar.organization=Ysa4 -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN
+        run: mvn -B verify sonar:sonar -Dsonar.projectKey=ysa4-key -Dsonar.organization=Yeabsira_Asfaw -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
