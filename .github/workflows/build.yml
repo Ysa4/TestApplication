@@ -6,6 +6,7 @@ on:
   push:
     branches:
       - main
+      - 'Ysa4-*'
 jobs:
   #Test's job
   tests:
